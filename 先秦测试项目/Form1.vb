@@ -4,11 +4,10 @@
         Dim generator As New Random
         Dim i As Integer
         Dim j As String
-        Dim obj As Object
-        i = generator.Next(0, 20)
+        i = generator.Next(0, 149)
         u = i
         j = i.ToString
-        PictureBox.Image = 先秦测试项目.My.Resources.Resources._pic(j)
+        PictureBox.Image = My.Resources._pic(j)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

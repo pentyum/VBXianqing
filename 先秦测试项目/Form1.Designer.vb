@@ -29,7 +29,6 @@ Partial Class Main
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -45,11 +44,12 @@ Partial Class Main
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.PictureBox = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.maintab.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        CType(Me.PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
+        CType(Me.PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -126,15 +126,6 @@ Partial Class Main
         Me.Label1.Size = New System.Drawing.Size(265, 46)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "请猜图中的字符"
-        '
-        'PictureBox
-        '
-        Me.PictureBox.Location = New System.Drawing.Point(105, 105)
-        Me.PictureBox.Name = "PictureBox"
-        Me.PictureBox.Size = New System.Drawing.Size(393, 333)
-        Me.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox.TabIndex = 0
-        Me.PictureBox.TabStop = False
         '
         'TabPage2
         '
@@ -301,6 +292,15 @@ Partial Class Main
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "???"
         '
+        'PictureBox
+        '
+        Me.PictureBox.Location = New System.Drawing.Point(105, 105)
+        Me.PictureBox.Name = "PictureBox"
+        Me.PictureBox.Size = New System.Drawing.Size(393, 333)
+        Me.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox.TabIndex = 0
+        Me.PictureBox.TabStop = False
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.先秦测试项目.My.Resources.Resources.map
@@ -322,9 +322,9 @@ Partial Class Main
         Me.maintab.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
-        CType(Me.PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        CType(Me.PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
